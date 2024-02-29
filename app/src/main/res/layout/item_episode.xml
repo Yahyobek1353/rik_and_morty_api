@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_item_cs"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/item_mg"
+        android:src="@color/grey"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_mg"
+        android:layout_marginStart="6dp"
+        android:id="@+id/item_name"/>
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/text"
+        android:text="         air date:"
+        app:layout_constraintStart_toEndOf="@id/item_mg"
+        app:layout_constraintTop_toBottomOf="@id/item_name"
+        app:layout_constraintEnd_toStartOf="@id/item_tvType"
+        android:id="@+id/item_tvStatus"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/item_tvType"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/item_tvStatus"
+        app:layout_constraintBottom_toBottomOf="@+id/item_tvStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/text_Alien" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/item_tvStatus_Mele"
+        android:text="Meeseeks and Destroy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_mg"
+        app:layout_constraintTop_toBottomOf="@id/item_tvStatus"
+        style="@style/text" />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
